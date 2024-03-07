@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My App</title>
+</head>
+<body>
+    <h1>Pet Name Generator</h1>
+    <form action="{{ url_for('out')}}" method='post'>
+        <p>Select Pet Animal:</p>
+        <p>
+            <select name="animal">
+                <option value="cat">Cat</option>
+                <option value="dog">Dog</option>
+                <option value="hen">Hen</option>
+            </select>
+        </p>
+        <p>Pet Color:</p>
+        <p><input type='text' name='color'/></p>
+        <button type='submit' value='submit'>Generate Name</button>
+    </form>
+</body>
+</html>
